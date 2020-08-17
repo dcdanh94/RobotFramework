@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200817 22:09:54.566" rpa="false">
+    <suite id="s1" name="Register &amp; Login &amp; New Customer">
+        <suite id="s1-s1" name="Register"
+               source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register">
+            <suite id="s1-s1-s1" name="Register Testcase"
+                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Testcase">
+                <suite id="s1-s1-s1-s1" name="TC1-Register"
+                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Testcase/TC1-Register.robot">
+                    <test id="s1-s1-s1-s1-t1" name="Verify Error Message When Email Is Empty">
+                        <kw name="User Navigate To HomePage" library="Register_Keyword">
+                            <kw name="Navigate To HomePage" library="URL_Page">
+                                <kw name="Open Browser" library="SeleniumLibrary">
+                                    <doc>Opens a new browser instance to the optional ``url``.</doc>
+                                    <arguments>
+                                        <arg>${url_homepage}</arg>
+                                        <arg>${chrome}</arg>
+                                        <arg>options=add_argument("--ignore-certificate-errors")</arg>
+                                    </arguments>
+                                    <msg timestamp="20200817 22:09:55.010" level="INFO">Opening browser 'chrome' to base
+                                        url 'http://www.demo.guru99.com/V4/'.
+                                    </msg>
+                                    <status status="PASS" starttime="20200817 22:09:55.010"
+                                            endtime="20200817 22:10:03.440"></status>
+                                </kw>
+                                <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                                    <doc>Maximizes current browser window.</doc>
+                                    <status status="PASS" starttime="20200817 22:10:03.441"
+                                            endtime="20200817 22:10:03.585"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:09:55.009"
+                                        endtime="20200817 22:10:03.585"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:09:55.008"
+                                    endtime="20200817 22:10:03.585"></status>
+                        </kw>
+                        <kw name="User Click On Link Register" library="Register_Keyword">
+                            <kw name="Click On Link Register" library="Register_Page">
+                                <kw name="Click On Link" library="action">
+                                    <arguments>
+                                        <arg>${register_link}</arg>
+                                    </arguments>
+                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                                        <doc>Waits until the element ``locator`` is visible.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:03.588"
+                                                endtime="20200817 22:10:03.637"></status>
+                                    </kw>
+                                    <kw name="Click Link" library="SeleniumLibrary">
+                                        <doc>Clicks a link identified by ``locator``.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <msg timestamp="20200817 22:10:03.637" level="INFO">Clicking link
+                                            'xpath=//a[text()='here']'.
+                                        </msg>
+                                        <status status="PASS" starttime="20200817 22:10:03.637"
+                                                endtime="20200817 22:10:07.323"></status>
+                                    </kw>
+                                    <status status="PASS" starttime="20200817 22:10:03.587"
+                                            endtime="20200817 22:10:07.324"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:10:03.587"
+                                        endtime="20200817 22:10:07.324"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:10:03.586"
+                                    endtime="20200817 22:10:07.324"></status>
+                        </kw>
+                        <kw name="User Clear Value On Email" library="Register_Keyword">
+                            <kw name="Clear Value On Email" library="Register_Page">
+                                <kw name="Clear Text On Element" library="action">
+                                    <arguments>
+                                        <arg>${emailID_txt}</arg>
+                                    </arguments>
+                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                                        <doc>Waits until the element ``locator`` is visible.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:07.326"
+                                                endtime="20200817 22:10:07.357"></status>
+                                    </kw>
+                                    <kw name="Scroll Element Into View" library="SeleniumLibrary">
+                                        <doc>Scrolls the element identified by ``locator`` into view.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:07.358"
+                                                endtime="20200817 22:10:07.639"></status>
+                                    </kw>
+                                    <kw name="Clear Element Text" library="SeleniumLibrary">
+                                        <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:07.640"
+                                                endtime="20200817 22:10:07.676"></status>
+                                    </kw>
+                                    <status status="PASS" starttime="20200817 22:10:07.325"
+                                            endtime="20200817 22:10:07.677"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:10:07.325"
+                                        endtime="20200817 22:10:07.677"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:10:07.324"
+                                    endtime="20200817 22:10:07.677"></status>
+                        </kw>
+                        <kw name="User Click On Submit Button" library="Register_Keyword">
+                            <kw name="Click On Submit Button" library="Register_Page">
+                                <kw name="Click On Element" library="action">
+                                    <arguments>
+                                        <arg>${submit_btn}</arg>
+                                    </arguments>
+                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                                        <doc>Waits until the element ``locator`` is visible.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:07.678"
+                                                endtime="20200817 22:10:07.699"></status>
+                                    </kw>
+                                    <kw name="Click Element" library="SeleniumLibrary">
+                                        <doc>Click the element identified by ``locator``.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <msg timestamp="20200817 22:10:07.700" level="INFO">Clicking element
+                                            'name=btnLogin'.
+                                        </msg>
+                                        <status status="PASS" starttime="20200817 22:10:07.700"
+                                                endtime="20200817 22:10:07.779"></status>
+                                    </kw>
+                                    <status status="PASS" starttime="20200817 22:10:07.678"
+                                            endtime="20200817 22:10:07.780"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:10:07.677"
+                                        endtime="20200817 22:10:07.780"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:10:07.677"
+                                    endtime="20200817 22:10:07.780"></status>
+                        </kw>
+                        <kw name="User Verify Error Message Is Correct When Email Is Empty" library="Register_Keyword">
+                            <kw name="Verify Error Message When Email Is Emplty Is Correct" library="Register_Page">
+                                <kw name="Verify That Action Is Correctly" library="action">
+                                    <arguments>
+                                        <arg>${error_message_lbl}</arg>
+                                        <arg>${email_error_empty}</arg>
+                                    </arguments>
+                                    <kw name="Scroll Element Into View" library="SeleniumLibrary">
+                                        <doc>Scrolls the element identified by ``locator`` into view.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:07.781"
+                                                endtime="20200817 22:10:08.073"></status>
+                                    </kw>
+                                    <kw name="Get Text On Element" library="action">
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <assign>
+                                            <var>${actual_result}</var>
+                                        </assign>
+                                        <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                                            <doc>Waits until the element ``locator`` is visible.</doc>
+                                            <arguments>
+                                                <arg>${locator}</arg>
+                                            </arguments>
+                                            <status status="PASS" starttime="20200817 22:10:08.074"
+                                                    endtime="20200817 22:10:08.091"></status>
+                                        </kw>
+                                        <kw name="Scroll Element Into View" library="SeleniumLibrary">
+                                            <doc>Scrolls the element identified by ``locator`` into view.</doc>
+                                            <arguments>
+                                                <arg>${locator}</arg>
+                                            </arguments>
+                                            <status status="PASS" starttime="20200817 22:10:08.091"
+                                                    endtime="20200817 22:10:08.372"></status>
+                                        </kw>
+                                        <kw name="Get Text" library="SeleniumLibrary">
+                                            <doc>Returns the text value of the element identified by ``locator``.</doc>
+                                            <arguments>
+                                                <arg>${locator}</arg>
+                                            </arguments>
+                                            <assign>
+                                                <var>${return_text}</var>
+                                            </assign>
+                                            <msg timestamp="20200817 22:10:08.392" level="INFO">${return_text} = Email
+                                                ID must not be blank
+                                            </msg>
+                                            <status status="PASS" starttime="20200817 22:10:08.373"
+                                                    endtime="20200817 22:10:08.392"></status>
+                                        </kw>
+                                        <msg timestamp="20200817 22:10:08.392" level="INFO">${actual_result} = Email ID
+                                            must not be blank
+                                        </msg>
+                                        <status status="PASS" starttime="20200817 22:10:08.073"
+                                                endtime="20200817 22:10:08.392"></status>
+                                    </kw>
+                                    <kw name="Should Be Equal" library="BuiltIn">
+                                        <doc>Fails if the given objects are unequal.</doc>
+                                        <arguments>
+                                            <arg>${actual_result}</arg>
+                                            <arg>${expected_result}</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:08.393"
+                                                endtime="20200817 22:10:08.393"></status>
+                                    </kw>
+                                    <kw name="Log To Console" library="BuiltIn">
+                                        <doc>Logs the given message to the console.</doc>
+                                        <arguments>
+                                            <arg>text=${actual_result}</arg>
+                                            <arg>STDERR</arg>
+                                        </arguments>
+                                        <status status="PASS" starttime="20200817 22:10:08.393"
+                                                endtime="20200817 22:10:08.394"></status>
+                                    </kw>
+                                    <status status="PASS" starttime="20200817 22:10:07.781"
+                                            endtime="20200817 22:10:08.394"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:10:07.781"
+                                        endtime="20200817 22:10:08.394"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:10:07.780"
+                                    endtime="20200817 22:10:08.394"></status>
+                        </kw>
+                        <tags>
+                            <tag>All</tag>
+                            <tag>Register</tag>
+                        </tags>
+                        <status status="PASS" starttime="20200817 22:09:55.007" endtime="20200817 22:10:08.394"
+                                critical="yes"></status>
+                    </test>
+                    <test id="s1-s1-s1-s1-t2" name="Register User Is Success">
+                        <kw name="User Input Email" library="Register_Keyword">
+                            <kw name="Input Email" library="Register_Page">
+                                <kw name="Email Random" library="register_variables">
+                                    <kw name="faker.email">
+                                        <assign>
+                                            <var>${email} =</var>
+                                        </assign>
+                                        <msg timestamp="20200817 22:10:08.406" level="FAIL">No keyword with name
+                                            'faker.email' found.
+                                        </msg>
+                                        <status status="FAIL" starttime="20200817 22:10:08.406"
+                                                endtime="20200817 22:10:08.407"></status>
+                                    </kw>
+                                    <status status="FAIL" starttime="20200817 22:10:08.398"
+                                            endtime="20200817 22:10:08.407"></status>
+                                </kw>
+                                <status status="FAIL" starttime="20200817 22:10:08.397"
+                                        endtime="20200817 22:10:08.407"></status>
+                            </kw>
+                            <status status="FAIL" starttime="20200817 22:10:08.396"
+                                    endtime="20200817 22:10:08.408"></status>
+                        </kw>
+                        <tags>
+                            <tag>All</tag>
+                            <tag>Register</tag>
+                        </tags>
+                        <status status="FAIL" starttime="20200817 22:10:08.395" endtime="20200817 22:10:08.408"
+                                critical="yes">No keyword with name 'faker.email' found.
+                        </status>
+                    </test>
+                    <status status="FAIL" starttime="20200817 22:09:54.605" endtime="20200817 22:10:08.411"></status>
+                </suite>
+                <status status="FAIL" starttime="20200817 22:09:54.602" endtime="20200817 22:10:08.416"></status>
+            </suite>
+            <status status="FAIL" starttime="20200817 22:09:54.600" endtime="20200817 22:10:08.422"></status>
+        </suite>
+        <suite id="s1-s2" name="Login" source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login">
+            <suite id="s1-s2-s1" name="Login Testcase"
+                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login/Login_Testcase">
+                <suite id="s1-s2-s1-s1" name="TC1-Valid login"
+                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login/Login_Testcase/TC1-Valid_login.robot">
+                    <test id="s1-s2-s1-s1-t1" name="Login is valid">
+                        <kw name="User Open New Tab Navigate To HomePage" library="Valid_login_keyword">
+                            <kw name="Open New Tab Navigate To HomePage" library="URL_Page">
+                                <kw name="Execute Javascript" library="SeleniumLibrary">
+                                    <doc>Executes the given JavaScript code with possible arguments.</doc>
+                                    <arguments>
+                                        <arg>window.open()</arg>
+                                    </arguments>
+                                    <msg timestamp="20200817 22:10:08.505" level="INFO">Executing JavaScript:
+                                        window.open()
+                                        Without any arguments.
+                                    </msg>
+                                    <status status="PASS" starttime="20200817 22:10:08.504"
+                                            endtime="20200817 22:10:08.575"></status>
+                                </kw>
+                                <kw name="Switch Window" library="SeleniumLibrary">
+                                    <doc>Switches to browser window matching ``locator``.</doc>
+                                    <arguments>
+                                        <arg>locator=NEW</arg>
+                                    </arguments>
+                                    <status status="PASS" starttime="20200817 22:10:08.575"
+                                            endtime="20200817 22:10:08.593"></status>
+                                </kw>
+                                <kw name="Go To" library="SeleniumLibrary">
+                                    <doc>Navigates the current browser window to the provided ``url``.</doc>
+                                    <arguments>
+                                        <arg>${url_homepage}</arg>
+                                    </arguments>
+                                    <msg timestamp="20200817 22:10:08.594" level="INFO">Opening url
+                                        'http://www.demo.guru99.com/V4/'
+                                    </msg>
+                                    <status status="PASS" starttime="20200817 22:10:08.593"
+                                            endtime="20200817 22:10:10.308"></status>
+                                </kw>
+                                <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                                    <doc>Maximizes current browser window.</doc>
+                                    <status status="PASS" starttime="20200817 22:10:10.309"
+                                            endtime="20200817 22:10:10.417"></status>
+                                </kw>
+                                <status status="PASS" starttime="20200817 22:10:08.503"
+                                        endtime="20200817 22:10:10.418"></status>
+                            </kw>
+                            <status status="PASS" starttime="20200817 22:10:08.501"
+                                    endtime="20200817 22:10:10.418"></status>
+                        </kw>
+                        <kw name="User Input UserID" library="Valid_login_keyword">
+                            <kw name="Input UserID Register" library="Valid_login_page">
+                                <kw name="Input Text On Element" library="action">
+                                    <arguments>
+                                        <arg>${userID_txt}</arg>
+                                        <arg>${NEW_USERID}</arg>
+                                    </arguments>
+                                    <msg timestamp="20200817 22:10:10.421" level="FAIL">Variable '${NEW_USERID}' not
+                                        found. Did you mean:
+                                        ${userID}
+                                    </msg>
+                                    <status status="FAIL" starttime="20200817 22:10:10.419"
+                                            endtime="20200817 22:10:10.421"></status>
+                                </kw>
+                                <status status="FAIL" starttime="20200817 22:10:10.419"
+                                        endtime="20200817 22:10:10.421"></status>
+                            </kw>
+                            <status status="FAIL" starttime="20200817 22:10:10.418"
+                                    endtime="20200817 22:10:10.421"></status>
+                        </kw>
+                        <tags>
+                            <tag>All</tag>
+                            <tag>login_success_1</tag>
+                            <tag>Register</tag>
+                        </tags>
+                        <status status="FAIL" starttime="20200817 22:10:08.498" endtime="20200817 22:10:10.422"
+                                critical="yes">Variable '${NEW_USERID}' not found. Did you mean:
+                            ${userID}
+                        </status>
+                    </test>
+                    <status status="FAIL" starttime="20200817 22:10:08.443" endtime="20200817 22:10:10.423"></status>
+                </suite>
+                <status status="FAIL" starttime="20200817 22:10:08.440" endtime="20200817 22:10:10.426"></status>
+            </suite>
+            <status status="FAIL" starttime="20200817 22:10:08.430" endtime="20200817 22:10:10.428"></status>
+        </suite>
+        <suite id="s1-s3" name="New Customer"
+               source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer">
+            <suite id="s1-s3-s1" name="NewCustomer Testcase"
+                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer/NewCustomer_Testcase">
+                <suite id="s1-s3-s1-s1" name="AddNewCustomer"
+                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer/NewCustomer_Testcase/AddNewCustomer.robot">
+                    <test id="s1-s3-s1-s1-t1" name="Add NewCustomer Is Success">
+                        <kw name="User Open NewCustomer Page" library="NewCustomer_Keyword">
+                            <kw name="Open NewCustomer Page" library="NewCustomer_Page">
+                                <kw name="Click On Link" library="action">
+                                    <arguments>
+                                        <arg>${newCustomer_link}</arg>
+                                    </arguments>
+                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                                        <doc>Waits until the element ``locator`` is visible.</doc>
+                                        <arguments>
+                                            <arg>${locator}</arg>
+                                        </arguments>
+                                        <kw name="Capture Page Screenshot" library="SeleniumLibrary">
+                                            <doc>Takes a screenshot of the current page and embeds it into a log file.
+                                            </doc>
+                                            <msg timestamp="20200817 22:10:14.941" level="FAIL">NoSuchWindowException:
+                                                Message: no such window: target window already closed
+                                                from unknown error: web view not found
+                                                (Session info: chrome=84.0.4147.125)
+                                            </msg>
+                                            <status status="FAIL" starttime="20200817 22:10:14.924"
+                                                    endtime="20200817 22:10:14.941"></status>
+                                        </kw>
+                                        <msg timestamp="20200817 22:10:14.941" level="WARN">Keyword 'Capture Page
+                                            Screenshot' could not be run on failure: NoSuchWindowException: Message: no
+                                            such window: target window already closed
+                                            from unknown error: web view not found
+                                            (Session info: chrome=84.0.4147.125)
+                                        </msg>
+                                        <msg timestamp="20200817 22:10:14.944" level="FAIL">NoSuchWindowException:
+                                            Message: no such window: target window already closed
+                                            from unknown error: web view not found
+                                            (Session info: chrome=84.0.4147.125)
+                                        </msg>
+                                        <status status="FAIL" starttime="20200817 22:10:10.475"
+                                                endtime="20200817 22:10:14.944"></status>
+                                    </kw>
+                                    <status status="FAIL" starttime="20200817 22:10:10.475"
+                                            endtime="20200817 22:10:14.945"></status>
+                                </kw>
+                                <status status="FAIL" starttime="20200817 22:10:10.474"
+                                        endtime="20200817 22:10:14.945"></status>
+                            </kw>
+                            <status status="FAIL" starttime="20200817 22:10:10.474"
+                                    endtime="20200817 22:10:14.945"></status>
+                        </kw>
+                        <tags>
+                            <tag>All</tag>
+                            <tag>Register</tag>
+                        </tags>
+                        <status status="FAIL" starttime="20200817 22:10:10.473" endtime="20200817 22:10:14.945"
+                                critical="yes">NoSuchWindowException: Message: no such window: target window already
+                            closed
+                            from unknown error: web view not found
+                            (Session info: chrome=84.0.4147.125)
+                        </status>
+                    </test>
+                    <status status="FAIL" starttime="20200817 22:10:10.435" endtime="20200817 22:10:14.946"></status>
+                </suite>
+                <status status="FAIL" starttime="20200817 22:10:10.432" endtime="20200817 22:10:14.951"></status>
+            </suite>
+            <status status="FAIL" starttime="20200817 22:10:10.430" endtime="20200817 22:10:14.953"></status>
+        </suite>
+        <status status="FAIL" starttime="20200817 22:09:54.568" endtime="20200817 22:10:14.957"></status>
+    </suite>
+    <statistics>
+        <total>
+            <stat pass="1" fail="3">Critical Tests</stat>
+            <stat pass="1" fail="3">All Tests</stat>
+        </total>
+        <tag>
+            <stat pass="1" fail="3">All</stat>
+            <stat pass="0" fail="1">login_success_1</stat>
+            <stat pass="1" fail="3">Register</stat>
+        </tag>
+        <suite>
+            <stat pass="1" fail="3" id="s1" name="Register &amp; Login &amp; New Customer">Register &amp; Login &amp;
+                New Customer
+            </stat>
+            <stat pass="1" fail="1" id="s1-s1" name="Register">Register &amp; Login &amp; New Customer.Register</stat>
+            <stat pass="1" fail="1" id="s1-s1-s1" name="Register Testcase">Register &amp; Login &amp; New
+                Customer.Register.Register Testcase
+            </stat>
+            <stat pass="1" fail="1" id="s1-s1-s1-s1" name="TC1-Register">Register &amp; Login &amp; New
+                Customer.Register.Register Testcase.TC1-Register
+            </stat>
+            <stat pass="0" fail="1" id="s1-s2" name="Login">Register &amp; Login &amp; New Customer.Login</stat>
+            <stat pass="0" fail="1" id="s1-s2-s1" name="Login Testcase">Register &amp; Login &amp; New
+                Customer.Login.Login Testcase
+            </stat>
+            <stat pass="0" fail="1" id="s1-s2-s1-s1" name="TC1-Valid login">Register &amp; Login &amp; New
+                Customer.Login.Login Testcase.TC1-Valid login
+            </stat>
+            <stat pass="0" fail="1" id="s1-s3" name="New Customer">Register &amp; Login &amp; New Customer.New
+                Customer
+            </stat>
+            <stat pass="0" fail="1" id="s1-s3-s1" name="NewCustomer Testcase">Register &amp; Login &amp; New
+                Customer.New Customer.NewCustomer Testcase
+            </stat>
+            <stat pass="0" fail="1" id="s1-s3-s1-s1" name="AddNewCustomer">Register &amp; Login &amp; New Customer.New
+                Customer.NewCustomer Testcase.AddNewCustomer
+            </stat>
+        </suite>
+    </statistics>
+    <errors>
+        <msg timestamp="20200817 22:09:55.001" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/register_variables.robot' on line 2:
+            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:09:55.002" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Page/Register_Page.robot'
+            on line 5: Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:10:08.479" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/login_variables.robot' on line 2:
+            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:10:08.485" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/register_variables.robot' on line 2:
+            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:10:08.491" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Page/Register_Page.robot'
+            on line 5: Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:10:10.464" level="ERROR">Error in file
+            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/newCustomer_variables.robot' on line 2:
+            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
+            Traceback (most recent call last):
+            None
+            PYTHONPATH:
+            /Library/Frameworks/Python.framework/Versions/3.8/bin
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
+            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+        </msg>
+        <msg timestamp="20200817 22:10:14.941" level="WARN">Keyword 'Capture Page Screenshot' could not be run on
+            failure: NoSuchWindowException: Message: no such window: target window already closed
+            from unknown error: web view not found
+            (Session info: chrome=84.0.4147.125)
+        </msg>
+    </errors>
+</robot>
