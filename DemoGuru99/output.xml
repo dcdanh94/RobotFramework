@@ -1,548 +1,1250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200817 22:09:54.566" rpa="false">
-    <suite id="s1" name="Register &amp; Login &amp; New Customer">
-        <suite id="s1-s1" name="Register"
-               source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register">
-            <suite id="s1-s1-s1" name="Register Testcase"
-                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Testcase">
-                <suite id="s1-s1-s1-s1" name="TC1-Register"
-                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Testcase/TC1-Register.robot">
-                    <test id="s1-s1-s1-s1-t1" name="Verify Error Message When Email Is Empty">
-                        <kw name="User Navigate To HomePage" library="Register_Keyword">
-                            <kw name="Navigate To HomePage" library="URL_Page">
-                                <kw name="Open Browser" library="SeleniumLibrary">
-                                    <doc>Opens a new browser instance to the optional ``url``.</doc>
-                                    <arguments>
-                                        <arg>${url_homepage}</arg>
-                                        <arg>${chrome}</arg>
-                                        <arg>options=add_argument("--ignore-certificate-errors")</arg>
-                                    </arguments>
-                                    <msg timestamp="20200817 22:09:55.010" level="INFO">Opening browser 'chrome' to base
-                                        url 'http://www.demo.guru99.com/V4/'.
-                                    </msg>
-                                    <status status="PASS" starttime="20200817 22:09:55.010"
-                                            endtime="20200817 22:10:03.440"></status>
-                                </kw>
-                                <kw name="Maximize Browser Window" library="SeleniumLibrary">
-                                    <doc>Maximizes current browser window.</doc>
-                                    <status status="PASS" starttime="20200817 22:10:03.441"
-                                            endtime="20200817 22:10:03.585"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:09:55.009"
-                                        endtime="20200817 22:10:03.585"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:09:55.008"
-                                    endtime="20200817 22:10:03.585"></status>
-                        </kw>
-                        <kw name="User Click On Link Register" library="Register_Keyword">
-                            <kw name="Click On Link Register" library="Register_Page">
-                                <kw name="Click On Link" library="action">
-                                    <arguments>
-                                        <arg>${register_link}</arg>
-                                    </arguments>
-                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-                                        <doc>Waits until the element ``locator`` is visible.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:03.588"
-                                                endtime="20200817 22:10:03.637"></status>
-                                    </kw>
-                                    <kw name="Click Link" library="SeleniumLibrary">
-                                        <doc>Clicks a link identified by ``locator``.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <msg timestamp="20200817 22:10:03.637" level="INFO">Clicking link
-                                            'xpath=//a[text()='here']'.
-                                        </msg>
-                                        <status status="PASS" starttime="20200817 22:10:03.637"
-                                                endtime="20200817 22:10:07.323"></status>
-                                    </kw>
-                                    <status status="PASS" starttime="20200817 22:10:03.587"
-                                            endtime="20200817 22:10:07.324"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:10:03.587"
-                                        endtime="20200817 22:10:07.324"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:10:03.586"
-                                    endtime="20200817 22:10:07.324"></status>
-                        </kw>
-                        <kw name="User Clear Value On Email" library="Register_Keyword">
-                            <kw name="Clear Value On Email" library="Register_Page">
-                                <kw name="Clear Text On Element" library="action">
-                                    <arguments>
-                                        <arg>${emailID_txt}</arg>
-                                    </arguments>
-                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-                                        <doc>Waits until the element ``locator`` is visible.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:07.326"
-                                                endtime="20200817 22:10:07.357"></status>
-                                    </kw>
-                                    <kw name="Scroll Element Into View" library="SeleniumLibrary">
-                                        <doc>Scrolls the element identified by ``locator`` into view.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:07.358"
-                                                endtime="20200817 22:10:07.639"></status>
-                                    </kw>
-                                    <kw name="Clear Element Text" library="SeleniumLibrary">
-                                        <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:07.640"
-                                                endtime="20200817 22:10:07.676"></status>
-                                    </kw>
-                                    <status status="PASS" starttime="20200817 22:10:07.325"
-                                            endtime="20200817 22:10:07.677"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:10:07.325"
-                                        endtime="20200817 22:10:07.677"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:10:07.324"
-                                    endtime="20200817 22:10:07.677"></status>
-                        </kw>
-                        <kw name="User Click On Submit Button" library="Register_Keyword">
-                            <kw name="Click On Submit Button" library="Register_Page">
-                                <kw name="Click On Element" library="action">
-                                    <arguments>
-                                        <arg>${submit_btn}</arg>
-                                    </arguments>
-                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-                                        <doc>Waits until the element ``locator`` is visible.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:07.678"
-                                                endtime="20200817 22:10:07.699"></status>
-                                    </kw>
-                                    <kw name="Click Element" library="SeleniumLibrary">
-                                        <doc>Click the element identified by ``locator``.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <msg timestamp="20200817 22:10:07.700" level="INFO">Clicking element
-                                            'name=btnLogin'.
-                                        </msg>
-                                        <status status="PASS" starttime="20200817 22:10:07.700"
-                                                endtime="20200817 22:10:07.779"></status>
-                                    </kw>
-                                    <status status="PASS" starttime="20200817 22:10:07.678"
-                                            endtime="20200817 22:10:07.780"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:10:07.677"
-                                        endtime="20200817 22:10:07.780"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:10:07.677"
-                                    endtime="20200817 22:10:07.780"></status>
-                        </kw>
-                        <kw name="User Verify Error Message Is Correct When Email Is Empty" library="Register_Keyword">
-                            <kw name="Verify Error Message When Email Is Emplty Is Correct" library="Register_Page">
-                                <kw name="Verify That Action Is Correctly" library="action">
-                                    <arguments>
-                                        <arg>${error_message_lbl}</arg>
-                                        <arg>${email_error_empty}</arg>
-                                    </arguments>
-                                    <kw name="Scroll Element Into View" library="SeleniumLibrary">
-                                        <doc>Scrolls the element identified by ``locator`` into view.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:07.781"
-                                                endtime="20200817 22:10:08.073"></status>
-                                    </kw>
-                                    <kw name="Get Text On Element" library="action">
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <assign>
-                                            <var>${actual_result}</var>
-                                        </assign>
-                                        <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-                                            <doc>Waits until the element ``locator`` is visible.</doc>
-                                            <arguments>
-                                                <arg>${locator}</arg>
-                                            </arguments>
-                                            <status status="PASS" starttime="20200817 22:10:08.074"
-                                                    endtime="20200817 22:10:08.091"></status>
-                                        </kw>
-                                        <kw name="Scroll Element Into View" library="SeleniumLibrary">
-                                            <doc>Scrolls the element identified by ``locator`` into view.</doc>
-                                            <arguments>
-                                                <arg>${locator}</arg>
-                                            </arguments>
-                                            <status status="PASS" starttime="20200817 22:10:08.091"
-                                                    endtime="20200817 22:10:08.372"></status>
-                                        </kw>
-                                        <kw name="Get Text" library="SeleniumLibrary">
-                                            <doc>Returns the text value of the element identified by ``locator``.</doc>
-                                            <arguments>
-                                                <arg>${locator}</arg>
-                                            </arguments>
-                                            <assign>
-                                                <var>${return_text}</var>
-                                            </assign>
-                                            <msg timestamp="20200817 22:10:08.392" level="INFO">${return_text} = Email
-                                                ID must not be blank
-                                            </msg>
-                                            <status status="PASS" starttime="20200817 22:10:08.373"
-                                                    endtime="20200817 22:10:08.392"></status>
-                                        </kw>
-                                        <msg timestamp="20200817 22:10:08.392" level="INFO">${actual_result} = Email ID
-                                            must not be blank
-                                        </msg>
-                                        <status status="PASS" starttime="20200817 22:10:08.073"
-                                                endtime="20200817 22:10:08.392"></status>
-                                    </kw>
-                                    <kw name="Should Be Equal" library="BuiltIn">
-                                        <doc>Fails if the given objects are unequal.</doc>
-                                        <arguments>
-                                            <arg>${actual_result}</arg>
-                                            <arg>${expected_result}</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:08.393"
-                                                endtime="20200817 22:10:08.393"></status>
-                                    </kw>
-                                    <kw name="Log To Console" library="BuiltIn">
-                                        <doc>Logs the given message to the console.</doc>
-                                        <arguments>
-                                            <arg>text=${actual_result}</arg>
-                                            <arg>STDERR</arg>
-                                        </arguments>
-                                        <status status="PASS" starttime="20200817 22:10:08.393"
-                                                endtime="20200817 22:10:08.394"></status>
-                                    </kw>
-                                    <status status="PASS" starttime="20200817 22:10:07.781"
-                                            endtime="20200817 22:10:08.394"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:10:07.781"
-                                        endtime="20200817 22:10:08.394"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:10:07.780"
-                                    endtime="20200817 22:10:08.394"></status>
-                        </kw>
-                        <tags>
-                            <tag>All</tag>
-                            <tag>Register</tag>
-                        </tags>
-                        <status status="PASS" starttime="20200817 22:09:55.007" endtime="20200817 22:10:08.394"
-                                critical="yes"></status>
-                    </test>
-                    <test id="s1-s1-s1-s1-t2" name="Register User Is Success">
-                        <kw name="User Input Email" library="Register_Keyword">
-                            <kw name="Input Email" library="Register_Page">
-                                <kw name="Email Random" library="register_variables">
-                                    <kw name="faker.email">
-                                        <assign>
-                                            <var>${email} =</var>
-                                        </assign>
-                                        <msg timestamp="20200817 22:10:08.406" level="FAIL">No keyword with name
-                                            'faker.email' found.
-                                        </msg>
-                                        <status status="FAIL" starttime="20200817 22:10:08.406"
-                                                endtime="20200817 22:10:08.407"></status>
-                                    </kw>
-                                    <status status="FAIL" starttime="20200817 22:10:08.398"
-                                            endtime="20200817 22:10:08.407"></status>
-                                </kw>
-                                <status status="FAIL" starttime="20200817 22:10:08.397"
-                                        endtime="20200817 22:10:08.407"></status>
-                            </kw>
-                            <status status="FAIL" starttime="20200817 22:10:08.396"
-                                    endtime="20200817 22:10:08.408"></status>
-                        </kw>
-                        <tags>
-                            <tag>All</tag>
-                            <tag>Register</tag>
-                        </tags>
-                        <status status="FAIL" starttime="20200817 22:10:08.395" endtime="20200817 22:10:08.408"
-                                critical="yes">No keyword with name 'faker.email' found.
-                        </status>
-                    </test>
-                    <status status="FAIL" starttime="20200817 22:09:54.605" endtime="20200817 22:10:08.411"></status>
-                </suite>
-                <status status="FAIL" starttime="20200817 22:09:54.602" endtime="20200817 22:10:08.416"></status>
-            </suite>
-            <status status="FAIL" starttime="20200817 22:09:54.600" endtime="20200817 22:10:08.422"></status>
-        </suite>
-        <suite id="s1-s2" name="Login" source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login">
-            <suite id="s1-s2-s1" name="Login Testcase"
-                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login/Login_Testcase">
-                <suite id="s1-s2-s1-s1" name="TC1-Valid login"
-                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Login/Login_Testcase/TC1-Valid_login.robot">
-                    <test id="s1-s2-s1-s1-t1" name="Login is valid">
-                        <kw name="User Open New Tab Navigate To HomePage" library="Valid_login_keyword">
-                            <kw name="Open New Tab Navigate To HomePage" library="URL_Page">
-                                <kw name="Execute Javascript" library="SeleniumLibrary">
-                                    <doc>Executes the given JavaScript code with possible arguments.</doc>
-                                    <arguments>
-                                        <arg>window.open()</arg>
-                                    </arguments>
-                                    <msg timestamp="20200817 22:10:08.505" level="INFO">Executing JavaScript:
-                                        window.open()
-                                        Without any arguments.
-                                    </msg>
-                                    <status status="PASS" starttime="20200817 22:10:08.504"
-                                            endtime="20200817 22:10:08.575"></status>
-                                </kw>
-                                <kw name="Switch Window" library="SeleniumLibrary">
-                                    <doc>Switches to browser window matching ``locator``.</doc>
-                                    <arguments>
-                                        <arg>locator=NEW</arg>
-                                    </arguments>
-                                    <status status="PASS" starttime="20200817 22:10:08.575"
-                                            endtime="20200817 22:10:08.593"></status>
-                                </kw>
-                                <kw name="Go To" library="SeleniumLibrary">
-                                    <doc>Navigates the current browser window to the provided ``url``.</doc>
-                                    <arguments>
-                                        <arg>${url_homepage}</arg>
-                                    </arguments>
-                                    <msg timestamp="20200817 22:10:08.594" level="INFO">Opening url
-                                        'http://www.demo.guru99.com/V4/'
-                                    </msg>
-                                    <status status="PASS" starttime="20200817 22:10:08.593"
-                                            endtime="20200817 22:10:10.308"></status>
-                                </kw>
-                                <kw name="Maximize Browser Window" library="SeleniumLibrary">
-                                    <doc>Maximizes current browser window.</doc>
-                                    <status status="PASS" starttime="20200817 22:10:10.309"
-                                            endtime="20200817 22:10:10.417"></status>
-                                </kw>
-                                <status status="PASS" starttime="20200817 22:10:08.503"
-                                        endtime="20200817 22:10:10.418"></status>
-                            </kw>
-                            <status status="PASS" starttime="20200817 22:10:08.501"
-                                    endtime="20200817 22:10:10.418"></status>
-                        </kw>
-                        <kw name="User Input UserID" library="Valid_login_keyword">
-                            <kw name="Input UserID Register" library="Valid_login_page">
-                                <kw name="Input Text On Element" library="action">
-                                    <arguments>
-                                        <arg>${userID_txt}</arg>
-                                        <arg>${NEW_USERID}</arg>
-                                    </arguments>
-                                    <msg timestamp="20200817 22:10:10.421" level="FAIL">Variable '${NEW_USERID}' not
-                                        found. Did you mean:
-                                        ${userID}
-                                    </msg>
-                                    <status status="FAIL" starttime="20200817 22:10:10.419"
-                                            endtime="20200817 22:10:10.421"></status>
-                                </kw>
-                                <status status="FAIL" starttime="20200817 22:10:10.419"
-                                        endtime="20200817 22:10:10.421"></status>
-                            </kw>
-                            <status status="FAIL" starttime="20200817 22:10:10.418"
-                                    endtime="20200817 22:10:10.421"></status>
-                        </kw>
-                        <tags>
-                            <tag>All</tag>
-                            <tag>login_success_1</tag>
-                            <tag>Register</tag>
-                        </tags>
-                        <status status="FAIL" starttime="20200817 22:10:08.498" endtime="20200817 22:10:10.422"
-                                critical="yes">Variable '${NEW_USERID}' not found. Did you mean:
-                            ${userID}
-                        </status>
-                    </test>
-                    <status status="FAIL" starttime="20200817 22:10:08.443" endtime="20200817 22:10:10.423"></status>
-                </suite>
-                <status status="FAIL" starttime="20200817 22:10:08.440" endtime="20200817 22:10:10.426"></status>
-            </suite>
-            <status status="FAIL" starttime="20200817 22:10:08.430" endtime="20200817 22:10:10.428"></status>
-        </suite>
-        <suite id="s1-s3" name="New Customer"
-               source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer">
-            <suite id="s1-s3-s1" name="NewCustomer Testcase"
-                   source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer/NewCustomer_Testcase">
-                <suite id="s1-s3-s1-s1" name="AddNewCustomer"
-                       source="/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/New_Customer/NewCustomer_Testcase/AddNewCustomer.robot">
-                    <test id="s1-s3-s1-s1-t1" name="Add NewCustomer Is Success">
-                        <kw name="User Open NewCustomer Page" library="NewCustomer_Keyword">
-                            <kw name="Open NewCustomer Page" library="NewCustomer_Page">
-                                <kw name="Click On Link" library="action">
-                                    <arguments>
-                                        <arg>${newCustomer_link}</arg>
-                                    </arguments>
-                                    <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-                                        <doc>Waits until the element ``locator`` is visible.</doc>
-                                        <arguments>
-                                            <arg>${locator}</arg>
-                                        </arguments>
-                                        <kw name="Capture Page Screenshot" library="SeleniumLibrary">
-                                            <doc>Takes a screenshot of the current page and embeds it into a log file.
-                                            </doc>
-                                            <msg timestamp="20200817 22:10:14.941" level="FAIL">NoSuchWindowException:
-                                                Message: no such window: target window already closed
-                                                from unknown error: web view not found
-                                                (Session info: chrome=84.0.4147.125)
-                                            </msg>
-                                            <status status="FAIL" starttime="20200817 22:10:14.924"
-                                                    endtime="20200817 22:10:14.941"></status>
-                                        </kw>
-                                        <msg timestamp="20200817 22:10:14.941" level="WARN">Keyword 'Capture Page
-                                            Screenshot' could not be run on failure: NoSuchWindowException: Message: no
-                                            such window: target window already closed
-                                            from unknown error: web view not found
-                                            (Session info: chrome=84.0.4147.125)
-                                        </msg>
-                                        <msg timestamp="20200817 22:10:14.944" level="FAIL">NoSuchWindowException:
-                                            Message: no such window: target window already closed
-                                            from unknown error: web view not found
-                                            (Session info: chrome=84.0.4147.125)
-                                        </msg>
-                                        <status status="FAIL" starttime="20200817 22:10:10.475"
-                                                endtime="20200817 22:10:14.944"></status>
-                                    </kw>
-                                    <status status="FAIL" starttime="20200817 22:10:10.475"
-                                            endtime="20200817 22:10:14.945"></status>
-                                </kw>
-                                <status status="FAIL" starttime="20200817 22:10:10.474"
-                                        endtime="20200817 22:10:14.945"></status>
-                            </kw>
-                            <status status="FAIL" starttime="20200817 22:10:10.474"
-                                    endtime="20200817 22:10:14.945"></status>
-                        </kw>
-                        <tags>
-                            <tag>All</tag>
-                            <tag>Register</tag>
-                        </tags>
-                        <status status="FAIL" starttime="20200817 22:10:10.473" endtime="20200817 22:10:14.945"
-                                critical="yes">NoSuchWindowException: Message: no such window: target window already
-                            closed
-                            from unknown error: web view not found
-                            (Session info: chrome=84.0.4147.125)
-                        </status>
-                    </test>
-                    <status status="FAIL" starttime="20200817 22:10:10.435" endtime="20200817 22:10:14.946"></status>
-                </suite>
-                <status status="FAIL" starttime="20200817 22:10:10.432" endtime="20200817 22:10:14.951"></status>
-            </suite>
-            <status status="FAIL" starttime="20200817 22:10:10.430" endtime="20200817 22:10:14.953"></status>
-        </suite>
-        <status status="FAIL" starttime="20200817 22:09:54.568" endtime="20200817 22:10:14.957"></status>
-    </suite>
-    <statistics>
-        <total>
-            <stat pass="1" fail="3">Critical Tests</stat>
-            <stat pass="1" fail="3">All Tests</stat>
-        </total>
-        <tag>
-            <stat pass="1" fail="3">All</stat>
-            <stat pass="0" fail="1">login_success_1</stat>
-            <stat pass="1" fail="3">Register</stat>
-        </tag>
-        <suite>
-            <stat pass="1" fail="3" id="s1" name="Register &amp; Login &amp; New Customer">Register &amp; Login &amp;
-                New Customer
-            </stat>
-            <stat pass="1" fail="1" id="s1-s1" name="Register">Register &amp; Login &amp; New Customer.Register</stat>
-            <stat pass="1" fail="1" id="s1-s1-s1" name="Register Testcase">Register &amp; Login &amp; New
-                Customer.Register.Register Testcase
-            </stat>
-            <stat pass="1" fail="1" id="s1-s1-s1-s1" name="TC1-Register">Register &amp; Login &amp; New
-                Customer.Register.Register Testcase.TC1-Register
-            </stat>
-            <stat pass="0" fail="1" id="s1-s2" name="Login">Register &amp; Login &amp; New Customer.Login</stat>
-            <stat pass="0" fail="1" id="s1-s2-s1" name="Login Testcase">Register &amp; Login &amp; New
-                Customer.Login.Login Testcase
-            </stat>
-            <stat pass="0" fail="1" id="s1-s2-s1-s1" name="TC1-Valid login">Register &amp; Login &amp; New
-                Customer.Login.Login Testcase.TC1-Valid login
-            </stat>
-            <stat pass="0" fail="1" id="s1-s3" name="New Customer">Register &amp; Login &amp; New Customer.New
-                Customer
-            </stat>
-            <stat pass="0" fail="1" id="s1-s3-s1" name="NewCustomer Testcase">Register &amp; Login &amp; New
-                Customer.New Customer.NewCustomer Testcase
-            </stat>
-            <stat pass="0" fail="1" id="s1-s3-s1-s1" name="AddNewCustomer">Register &amp; Login &amp; New Customer.New
-                Customer.NewCustomer Testcase.AddNewCustomer
-            </stat>
-        </suite>
-    </statistics>
-    <errors>
-        <msg timestamp="20200817 22:09:55.001" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/register_variables.robot' on line 2:
-            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:09:55.002" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Page/Register_Page.robot'
-            on line 5: Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:10:08.479" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/login_variables.robot' on line 2:
-            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:10:08.485" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/register_variables.robot' on line 2:
-            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:10:08.491" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Register/Register_Page/Register_Page.robot'
-            on line 5: Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:10:10.464" level="ERROR">Error in file
-            '/Users/danhdc/Desktop/AutomationTest/RobotFramework/Automation/Data/newCustomer_variables.robot' on line 2:
-            Importing test library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'FakerLibrary'
-            Traceback (most recent call last):
-            None
-            PYTHONPATH:
-            /Library/Frameworks/Python.framework/Versions/3.8/bin
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python38.zip
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/lib-dynload
-            /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
-        </msg>
-        <msg timestamp="20200817 22:10:14.941" level="WARN">Keyword 'Capture Page Screenshot' could not be run on
-            failure: NoSuchWindowException: Message: no such window: target window already closed
-            from unknown error: web view not found
-            (Session info: chrome=84.0.4147.125)
-        </msg>
-    </errors>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on darwin)" generated="20200820 07:19:00.066" rpa="false">
+<suite id="s1" name="Register &amp; Login &amp; New Customer">
+<suite id="s1-s1" name="Register" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Register">
+<suite id="s1-s1-s1" name="Register Testcase" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Register/Register_Testcase">
+<suite id="s1-s1-s1-s1" name="TC1-Register" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Register/Register_Testcase/TC1-Register.robot">
+<test id="s1-s1-s1-s1-t1" name="Verify Error Message When Email Is Empty">
+<kw name="User Navigate To HomePage" library="Register_Keyword">
+<kw name="Navigate To HomePage" library="URL_Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url_homepage}</arg>
+<arg>${chrome}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+</arguments>
+<msg timestamp="20200820 07:19:00.716" level="INFO">Opening browser 'chrome' to base url 'http://www.demo.guru99.com/V4/'.</msg>
+<status status="PASS" starttime="20200820 07:19:00.716" endtime="20200820 07:19:08.620"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200820 07:19:08.620" endtime="20200820 07:19:08.793"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:00.715" endtime="20200820 07:19:08.794"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:00.715" endtime="20200820 07:19:08.794"></status>
+</kw>
+<kw name="User Click On Link Register" library="Register_Keyword">
+<kw name="Click On Link Register" library="Register_Page">
+<kw name="Click On Link" library="action">
+<arguments>
+<arg>${register_link}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:08.797" endtime="20200820 07:19:08.831"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:08.831" level="INFO">Clicking link 'xpath=//a[text()='here']'.</msg>
+<status status="PASS" starttime="20200820 07:19:08.831" endtime="20200820 07:19:10.822"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:08.796" endtime="20200820 07:19:10.823"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:08.796" endtime="20200820 07:19:10.823"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:08.795" endtime="20200820 07:19:10.823"></status>
+</kw>
+<kw name="User Clear Value On Email" library="Register_Keyword">
+<kw name="Clear Value On Email" library="Register_Page">
+<kw name="Clear Text On Element" library="action">
+<arguments>
+<arg>${emailID_txt}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:10.825" endtime="20200820 07:19:10.854"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:10.854" endtime="20200820 07:19:11.131"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.131" endtime="20200820 07:19:11.167"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:10.824" endtime="20200820 07:19:11.167"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:10.824" endtime="20200820 07:19:11.167"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:10.823" endtime="20200820 07:19:11.167"></status>
+</kw>
+<kw name="User Click On Submit Button" library="Register_Keyword">
+<kw name="Click On Submit Button" library="Register_Page">
+<kw name="Click On Element" library="action">
+<arguments>
+<arg>${submit_btn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.169" endtime="20200820 07:19:11.195"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:11.195" level="INFO">Clicking element 'name=btnLogin'.</msg>
+<status status="PASS" starttime="20200820 07:19:11.195" endtime="20200820 07:19:11.256"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.168" endtime="20200820 07:19:11.256"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.168" endtime="20200820 07:19:11.256"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.167" endtime="20200820 07:19:11.257"></status>
+</kw>
+<kw name="User Verify Error Message Is Correct When Email Is Empty" library="Register_Keyword">
+<kw name="Verify Error Message When Email Is Emplty Is Correct" library="Register_Page">
+<kw name="Verify That Action Is Correctly" library="action">
+<arguments>
+<arg>${error_message_lbl}</arg>
+<arg>${email_error_empty}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.258" endtime="20200820 07:19:11.547"></status>
+</kw>
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${actual_result}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.548" endtime="20200820 07:19:11.565"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.565" endtime="20200820 07:19:11.829"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:11.849" level="INFO">${return_text} = Email ID must not be blank</msg>
+<status status="PASS" starttime="20200820 07:19:11.829" endtime="20200820 07:19:11.849"></status>
+</kw>
+<msg timestamp="20200820 07:19:11.849" level="INFO">${actual_result} = Email ID must not be blank</msg>
+<status status="PASS" starttime="20200820 07:19:11.547" endtime="20200820 07:19:11.849"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_result}</arg>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.849" endtime="20200820 07:19:11.850"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>text=${actual_result}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.850" endtime="20200820 07:19:11.851"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.257" endtime="20200820 07:19:11.851"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.257" endtime="20200820 07:19:11.851"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.257" endtime="20200820 07:19:11.851"></status>
+</kw>
+<tags>
+<tag>All</tag>
+<tag>Register</tag>
+</tags>
+<status status="PASS" starttime="20200820 07:19:00.714" endtime="20200820 07:19:11.852" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Register User Is Success">
+<kw name="User Input Email" library="Register_Keyword">
+<kw name="Input Email" library="Register_Page">
+<kw name="Email Random" library="register_variables">
+<kw name="Email" library="faker">
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20200820 07:19:11.855" level="INFO">${email} = jimmy09@riley-hernandez.info</msg>
+<status status="PASS" starttime="20200820 07:19:11.854" endtime="20200820 07:19:11.855"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:11.856" level="INFO">${email} = jimmy09@riley-hernandez.info</msg>
+<status status="PASS" starttime="20200820 07:19:11.855" endtime="20200820 07:19:11.856"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>email=${email}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.856" endtime="20200820 07:19:11.856"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.854" endtime="20200820 07:19:11.856"></status>
+</kw>
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${emailID_txt}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.857" endtime="20200820 07:19:11.877"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:11.877" endtime="20200820 07:19:12.163"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:12.164" level="INFO">Typing text 'jimmy09@riley-hernandez.info' into text field 'name=emailid'.</msg>
+<status status="PASS" starttime="20200820 07:19:12.163" endtime="20200820 07:19:12.431"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.856" endtime="20200820 07:19:12.432"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.853" endtime="20200820 07:19:12.432"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:11.853" endtime="20200820 07:19:12.433"></status>
+</kw>
+<kw name="User Click On Submit Button" library="Register_Keyword">
+<kw name="Click On Submit Button" library="Register_Page">
+<kw name="Click On Element" library="action">
+<arguments>
+<arg>${submit_btn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:12.436" endtime="20200820 07:19:12.465"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:12.465" level="INFO">Clicking element 'name=btnLogin'.</msg>
+<status status="PASS" starttime="20200820 07:19:12.465" endtime="20200820 07:19:14.524"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:12.436" endtime="20200820 07:19:14.524"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:12.435" endtime="20200820 07:19:14.525"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:12.433" endtime="20200820 07:19:14.525"></status>
+</kw>
+<kw name="User Get UserID Register" library="Register_Keyword">
+<kw name="Get UserID Register" library="Register_Page">
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${userID_lbl}</arg>
+</arguments>
+<assign>
+<var>${get_userID}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:14.527" endtime="20200820 07:19:14.627"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:14.627" endtime="20200820 07:19:14.913"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:14.932" level="INFO">${return_text} = mngr279866</msg>
+<status status="PASS" starttime="20200820 07:19:14.914" endtime="20200820 07:19:14.932"></status>
+</kw>
+<msg timestamp="20200820 07:19:14.932" level="INFO">${get_userID} = mngr279866</msg>
+<status status="PASS" starttime="20200820 07:19:14.527" endtime="20200820 07:19:14.932"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${NEW_USERID}</arg>
+<arg>${get_userID}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:14.934" level="INFO">${NEW_USERID} = mngr279866</msg>
+<status status="PASS" starttime="20200820 07:19:14.932" endtime="20200820 07:19:14.934"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>userID=${NEW_USERID}</arg>
+<arg>HTML</arg>
+</arguments>
+<msg timestamp="20200820 07:19:14.934" level="INFO" html="yes">userID=mngr279866</msg>
+<status status="PASS" starttime="20200820 07:19:14.934" endtime="20200820 07:19:14.934"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:14.526" endtime="20200820 07:19:14.934"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:14.525" endtime="20200820 07:19:14.934"></status>
+</kw>
+<kw name="User Get Password Register" library="Register_Keyword">
+<kw name="Get Password Register" library="Register_Page">
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${password_lbl}</arg>
+</arguments>
+<assign>
+<var>${get_pass}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:14.936" endtime="20200820 07:19:14.981"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:14.981" endtime="20200820 07:19:15.266"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:15.288" level="INFO">${return_text} = mEjamyr</msg>
+<status status="PASS" starttime="20200820 07:19:15.266" endtime="20200820 07:19:15.288"></status>
+</kw>
+<msg timestamp="20200820 07:19:15.289" level="INFO">${get_pass} = mEjamyr</msg>
+<status status="PASS" starttime="20200820 07:19:14.935" endtime="20200820 07:19:15.289"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${NEW_PASS}</arg>
+<arg>${get_pass}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:15.290" level="INFO">${NEW_PASS} = mEjamyr</msg>
+<status status="PASS" starttime="20200820 07:19:15.289" endtime="20200820 07:19:15.290"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>pass=${NEW_PASS}</arg>
+<arg>HTML</arg>
+</arguments>
+<msg timestamp="20200820 07:19:15.291" level="INFO" html="yes">pass=mEjamyr</msg>
+<status status="PASS" starttime="20200820 07:19:15.290" endtime="20200820 07:19:15.291"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:14.935" endtime="20200820 07:19:15.291"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:14.935" endtime="20200820 07:19:15.291"></status>
+</kw>
+<tags>
+<tag>All</tag>
+<tag>Register</tag>
+</tags>
+<status status="PASS" starttime="20200820 07:19:11.852" endtime="20200820 07:19:15.291" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200820 07:19:00.113" endtime="20200820 07:19:15.292"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:00.109" endtime="20200820 07:19:15.295"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:00.104" endtime="20200820 07:19:15.298"></status>
+</suite>
+<suite id="s1-s2" name="Login" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Login">
+<suite id="s1-s2-s1" name="Login Testcase" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Login/Login_Testcase">
+<suite id="s1-s2-s1-s1" name="TC1-Valid login" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/Login/Login_Testcase/TC1-Valid_login.robot">
+<test id="s1-s2-s1-s1-t1" name="Login is valid">
+<kw name="User Open New Tab Navigate To HomePage" library="Valid_login_keyword">
+<kw name="Open New Tab Navigate To HomePage" library="URL_Page">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.open()</arg>
+</arguments>
+<msg timestamp="20200820 07:19:15.348" level="INFO">Executing JavaScript:
+window.open()
+Without any arguments.</msg>
+<status status="PASS" starttime="20200820 07:19:15.348" endtime="20200820 07:19:15.394"></status>
+</kw>
+<kw name="Switch Window" library="Selenium2Library">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>locator=NEW</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:15.395" endtime="20200820 07:19:15.411"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url_homepage}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:15.411" level="INFO">Opening url 'http://www.demo.guru99.com/V4/'</msg>
+<status status="PASS" starttime="20200820 07:19:15.411" endtime="20200820 07:19:18.328"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200820 07:19:18.328" endtime="20200820 07:19:18.438"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:15.347" endtime="20200820 07:19:18.438"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:15.347" endtime="20200820 07:19:18.438"></status>
+</kw>
+<kw name="User Input UserID" library="Valid_login_keyword">
+<kw name="Input UserID Register" library="Valid_login_page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${userID_txt}</arg>
+<arg>${NEW_USERID}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:18.440" endtime="20200820 07:19:18.466"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:18.466" endtime="20200820 07:19:18.732"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:18.732" level="INFO">Typing text 'mngr279866' into text field 'name=uid'.</msg>
+<status status="PASS" starttime="20200820 07:19:18.732" endtime="20200820 07:19:18.876"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.439" endtime="20200820 07:19:18.876"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.439" endtime="20200820 07:19:18.876"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.438" endtime="20200820 07:19:18.876"></status>
+</kw>
+<kw name="User Input Password" library="Valid_login_keyword">
+<kw name="Input Password Register" library="Valid_login_page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${pass_txt}</arg>
+<arg>${NEW_PASS}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:18.878" endtime="20200820 07:19:18.903"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:18.903" endtime="20200820 07:19:19.183"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:19.184" level="INFO">Typing text 'mEjamyr' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20200820 07:19:19.183" endtime="20200820 07:19:19.286"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.877" endtime="20200820 07:19:19.286"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.877" endtime="20200820 07:19:19.286"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:18.877" endtime="20200820 07:19:19.286"></status>
+</kw>
+<kw name="User Click Login Button" library="Valid_login_keyword">
+<kw name="Click Login Button" library="Valid_login_page">
+<kw name="Click On Element" library="action">
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:19.288" endtime="20200820 07:19:19.304"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:19.305" level="INFO">Clicking element 'name=btnLogin'.</msg>
+<status status="PASS" starttime="20200820 07:19:19.305" endtime="20200820 07:19:21.023"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:19.287" endtime="20200820 07:19:21.023"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:19.287" endtime="20200820 07:19:21.023"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:19.287" endtime="20200820 07:19:21.023"></status>
+</kw>
+<kw name="User Verify Login Is Success" library="Valid_login_keyword">
+<kw name="Verify Login Is Success" library="Valid_login_page">
+<kw name="Verify That Action Is Correctly" library="action">
+<arguments>
+<arg>${login_success_locator}</arg>
+<arg>${login_success_message}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.025" endtime="20200820 07:19:21.319"></status>
+</kw>
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${actual_result}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.320" endtime="20200820 07:19:21.337"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.337" endtime="20200820 07:19:21.618"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:21.639" level="INFO">${return_text} = Welcome To Manager's Page of Guru99 Bank</msg>
+<status status="PASS" starttime="20200820 07:19:21.618" endtime="20200820 07:19:21.639"></status>
+</kw>
+<msg timestamp="20200820 07:19:21.639" level="INFO">${actual_result} = Welcome To Manager's Page of Guru99 Bank</msg>
+<status status="PASS" starttime="20200820 07:19:21.319" endtime="20200820 07:19:21.639"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_result}</arg>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.639" endtime="20200820 07:19:21.640"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>text=${actual_result}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.640" endtime="20200820 07:19:21.640"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.024" endtime="20200820 07:19:21.640"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.024" endtime="20200820 07:19:21.640"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.024" endtime="20200820 07:19:21.640"></status>
+</kw>
+<tags>
+<tag>All</tag>
+<tag>login_success_1</tag>
+<tag>Register</tag>
+</tags>
+<status status="PASS" starttime="20200820 07:19:15.346" endtime="20200820 07:19:21.641" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200820 07:19:15.303" endtime="20200820 07:19:21.641"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:15.302" endtime="20200820 07:19:21.643"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:15.299" endtime="20200820 07:19:21.645"></status>
+</suite>
+<suite id="s1-s3" name="New Customer" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/New_Customer">
+<suite id="s1-s3-s1" name="NewCustomer Testcase" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/New_Customer/NewCustomer_Testcase">
+<suite id="s1-s3-s1-s1" name="AddNewCustomer" source="/Users/danhdc/Desktop/Python/Python Project/RobotFramework/DemoGuru99/New_Customer/NewCustomer_Testcase/AddNewCustomer.robot">
+<test id="s1-s3-s1-s1-t1" name="Add NewCustomer Is Success">
+<kw name="User Open NewCustomer Page" library="NewCustomer_Keyword">
+<kw name="Open NewCustomer Page" library="NewCustomer_Page">
+<kw name="Click On Link" library="action">
+<arguments>
+<arg>${newCustomer_link}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:21.688" endtime="20200820 07:19:21.714"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:21.718" level="INFO">Clicking link 'xpath=//a[@href='addcustomerpage.php']'.</msg>
+<status status="PASS" starttime="20200820 07:19:21.715" endtime="20200820 07:19:22.475"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.687" endtime="20200820 07:19:22.475"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.687" endtime="20200820 07:19:22.476"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:21.687" endtime="20200820 07:19:22.476"></status>
+</kw>
+<kw name="User Verify NewCustomer Page Is Displayed" library="NewCustomer_Keyword">
+<kw name="Verify NewCustomer Page Is Displayed" library="NewCustomer_Page">
+<kw name="Verify That Action Is Correctly" library="action">
+<arguments>
+<arg>${addCustomer_page}</arg>
+<arg>${addCustomer_title}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:22.478" endtime="20200820 07:19:22.767"></status>
+</kw>
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${actual_result}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:22.768" endtime="20200820 07:19:22.784"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:22.784" endtime="20200820 07:19:23.048"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:23.068" level="INFO">${return_text} = Add New Customer</msg>
+<status status="PASS" starttime="20200820 07:19:23.048" endtime="20200820 07:19:23.068"></status>
+</kw>
+<msg timestamp="20200820 07:19:23.069" level="INFO">${actual_result} = Add New Customer</msg>
+<status status="PASS" starttime="20200820 07:19:22.767" endtime="20200820 07:19:23.069"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_result}</arg>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.069" endtime="20200820 07:19:23.070"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>text=${actual_result}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.070" endtime="20200820 07:19:23.071"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:22.477" endtime="20200820 07:19:23.071"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:22.477" endtime="20200820 07:19:23.071"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:22.477" endtime="20200820 07:19:23.071"></status>
+</kw>
+<kw name="User Input Customer Name" library="NewCustomer_Keyword">
+<kw name="Input Customer Name" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${customerName_txt}</arg>
+<arg>${_customerName}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.073" endtime="20200820 07:19:23.106"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.106" endtime="20200820 07:19:23.377"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:23.378" level="INFO">Typing text 'CustomerE' into text field 'xpath=//input[@name='name']'.</msg>
+<status status="PASS" starttime="20200820 07:19:23.378" endtime="20200820 07:19:23.496"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.072" endtime="20200820 07:19:23.496"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.072" endtime="20200820 07:19:23.496"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.072" endtime="20200820 07:19:23.497"></status>
+</kw>
+<kw name="User Select Gender Is Female" library="NewCustomer_Keyword">
+<kw name="Select Gender Is Female" library="NewCustomer_Page">
+<kw name="Click On Element" library="action">
+<arguments>
+<arg>${gender_rad_f}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.498" endtime="20200820 07:19:23.525"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:23.525" level="INFO">Clicking element 'xpath=//input[@name='rad1' and @value='f']'.</msg>
+<status status="PASS" starttime="20200820 07:19:23.525" endtime="20200820 07:19:23.571"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.497" endtime="20200820 07:19:23.572"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.497" endtime="20200820 07:19:23.572"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.497" endtime="20200820 07:19:23.572"></status>
+</kw>
+<kw name="User Input Date Of Birth" library="NewCustomer_Keyword">
+<kw name="Input Date Of Birth" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${dob_txt}</arg>
+<arg>${_dateOfBirth}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.573" endtime="20200820 07:19:23.598"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.598" endtime="20200820 07:19:23.864"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:23.865" level="INFO">Typing text '02/10/2020' into text field 'xpath=//input[@name='dob']'.</msg>
+<status status="PASS" starttime="20200820 07:19:23.865" endtime="20200820 07:19:23.994"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.573" endtime="20200820 07:19:23.995"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.572" endtime="20200820 07:19:23.995"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.572" endtime="20200820 07:19:23.995"></status>
+</kw>
+<kw name="User Input Address" library="NewCustomer_Keyword">
+<kw name="Input Address" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${address_txt}</arg>
+<arg>${_address}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:23.997" endtime="20200820 07:19:24.023"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:24.023" endtime="20200820 07:19:24.354"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:24.355" level="INFO">Typing text '123 linh trung' into text field 'xpath=//textarea[@name='addr']'.</msg>
+<status status="PASS" starttime="20200820 07:19:24.355" endtime="20200820 07:19:24.540"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.996" endtime="20200820 07:19:24.540"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.996" endtime="20200820 07:19:24.540"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:23.995" endtime="20200820 07:19:24.540"></status>
+</kw>
+<kw name="User Input City" library="NewCustomer_Keyword">
+<kw name="Input City" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${city_txt}</arg>
+<arg>${_city}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:24.541" endtime="20200820 07:19:24.573"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:24.574" endtime="20200820 07:19:24.852"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:24.853" level="INFO">Typing text 'hcm' into text field 'xpath=//input[@name='city']'.</msg>
+<status status="PASS" starttime="20200820 07:19:24.852" endtime="20200820 07:19:24.944"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.541" endtime="20200820 07:19:24.944"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.541" endtime="20200820 07:19:24.944"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.540" endtime="20200820 07:19:24.944"></status>
+</kw>
+<kw name="User Input State" library="NewCustomer_Keyword">
+<kw name="Input State" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${state_txt}</arg>
+<arg>${_state}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:24.946" endtime="20200820 07:19:24.974"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:24.974" endtime="20200820 07:19:25.251"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:25.252" level="INFO">Typing text 'Cali' into text field 'xpath=//input[@name='state']'.</msg>
+<status status="PASS" starttime="20200820 07:19:25.252" endtime="20200820 07:19:25.339"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.945" endtime="20200820 07:19:25.340"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.945" endtime="20200820 07:19:25.340"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:24.945" endtime="20200820 07:19:25.340"></status>
+</kw>
+<kw name="User Input PIN" library="NewCustomer_Keyword">
+<kw name="Input PIN" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${PIN_txt}</arg>
+<arg>${_PIN}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:25.341" endtime="20200820 07:19:25.369"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:25.370" endtime="20200820 07:19:25.653"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:25.653" level="INFO">Typing text '123456' into text field 'xpath=//input[@name='pinno']'.</msg>
+<status status="PASS" starttime="20200820 07:19:25.653" endtime="20200820 07:19:25.760"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.341" endtime="20200820 07:19:25.760"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.341" endtime="20200820 07:19:25.760"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.340" endtime="20200820 07:19:25.760"></status>
+</kw>
+<kw name="User Input Phone Number" library="NewCustomer_Keyword">
+<kw name="Input Phone Number" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${phone_txt}</arg>
+<arg>${_phone}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:25.762" endtime="20200820 07:19:25.793"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:25.793" endtime="20200820 07:19:26.069"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:26.071" level="INFO">Typing text '0999999999' into text field 'xpath=//input[@name='telephoneno']'.</msg>
+<status status="PASS" starttime="20200820 07:19:26.070" endtime="20200820 07:19:26.245"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.761" endtime="20200820 07:19:26.245"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.761" endtime="20200820 07:19:26.245"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:25.761" endtime="20200820 07:19:26.245"></status>
+</kw>
+<kw name="User Input Email" library="NewCustomer_Keyword">
+<kw name="Input Email" library="NewCustomer_Page">
+<kw name="Email Random" library="newCustomer_variables">
+<kw name="Email" library="faker">
+<assign>
+<var>${_email}</var>
+</assign>
+<msg timestamp="20200820 07:19:26.248" level="INFO">${_email} = higginspamela@gmail.com</msg>
+<status status="PASS" starttime="20200820 07:19:26.247" endtime="20200820 07:19:26.248"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${_email}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:26.249" level="INFO">${_email} = higginspamela@gmail.com</msg>
+<status status="PASS" starttime="20200820 07:19:26.248" endtime="20200820 07:19:26.249"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>_email=${_email}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:26.249" endtime="20200820 07:19:26.250"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.247" endtime="20200820 07:19:26.250"></status>
+</kw>
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${email_txt}</arg>
+<arg>${_email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:26.251" endtime="20200820 07:19:26.279"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:26.279" endtime="20200820 07:19:26.552"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:26.552" level="INFO">Typing text 'higginspamela@gmail.com' into text field 'xpath=//input[@name='emailid']'.</msg>
+<status status="PASS" starttime="20200820 07:19:26.552" endtime="20200820 07:19:26.754"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.250" endtime="20200820 07:19:26.754"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.246" endtime="20200820 07:19:26.754"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.246" endtime="20200820 07:19:26.754"></status>
+</kw>
+<kw name="User Input Password" library="NewCustomer_Keyword">
+<kw name="Input Password" library="NewCustomer_Page">
+<kw name="Input Text On Element" library="action">
+<arguments>
+<arg>${password_txt}</arg>
+<arg>${_password}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:26.756" endtime="20200820 07:19:26.777"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:26.777" endtime="20200820 07:19:27.052"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:27.053" level="INFO">Typing text '123456' into text field 'xpath=//input[@name='password']'.</msg>
+<status status="PASS" starttime="20200820 07:19:27.053" endtime="20200820 07:19:27.206"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.756" endtime="20200820 07:19:27.206"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.755" endtime="20200820 07:19:27.207"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:26.755" endtime="20200820 07:19:27.207"></status>
+</kw>
+<kw name="User Click On Submit Button" library="NewCustomer_Keyword">
+<kw name="Click On Submit Button" library="NewCustomer_Page">
+<kw name="Click On Element" library="action">
+<arguments>
+<arg>${submit_btn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:27.210" endtime="20200820 07:19:27.248"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200820 07:19:27.249" level="INFO">Clicking element 'xpath=//input[@name='sub']'.</msg>
+<status status="PASS" starttime="20200820 07:19:27.249" endtime="20200820 07:19:29.292"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:27.209" endtime="20200820 07:19:29.292"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:27.208" endtime="20200820 07:19:29.293"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:27.207" endtime="20200820 07:19:29.293"></status>
+</kw>
+<kw name="User Verify Add Customer Is Success" library="NewCustomer_Keyword">
+<kw name="Verify Add Customer Is Success" library="NewCustomer_Page">
+<kw name="Verify That Action Is Correctly" library="action">
+<arguments>
+<arg>${addCustomer_message}</arg>
+<arg>${_addCustomer_success}</arg>
+</arguments>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:29.294" endtime="20200820 07:19:29.588"></status>
+</kw>
+<kw name="Get Text On Element" library="action">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${actual_result}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:29.589" endtime="20200820 07:19:29.607"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:29.607" endtime="20200820 07:19:29.871"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<assign>
+<var>${return_text}</var>
+</assign>
+<msg timestamp="20200820 07:19:29.889" level="INFO">${return_text} = Customer Registered Successfully!!!</msg>
+<status status="PASS" starttime="20200820 07:19:29.871" endtime="20200820 07:19:29.889"></status>
+</kw>
+<msg timestamp="20200820 07:19:29.889" level="INFO">${actual_result} = Customer Registered Successfully!!!</msg>
+<status status="PASS" starttime="20200820 07:19:29.589" endtime="20200820 07:19:29.890"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_result}</arg>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:29.890" endtime="20200820 07:19:29.890"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>text=${actual_result}</arg>
+<arg>STDERR</arg>
+</arguments>
+<status status="PASS" starttime="20200820 07:19:29.890" endtime="20200820 07:19:29.890"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:29.294" endtime="20200820 07:19:29.891"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:29.293" endtime="20200820 07:19:29.891"></status>
+</kw>
+<status status="PASS" starttime="20200820 07:19:29.293" endtime="20200820 07:19:29.891"></status>
+</kw>
+<tags>
+<tag>All</tag>
+<tag>Register</tag>
+</tags>
+<status status="PASS" starttime="20200820 07:19:21.686" endtime="20200820 07:19:29.891" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200820 07:19:21.652" endtime="20200820 07:19:29.892"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:21.650" endtime="20200820 07:19:29.896"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:21.646" endtime="20200820 07:19:29.900"></status>
+</suite>
+<status status="PASS" starttime="20200820 07:19:00.068" endtime="20200820 07:19:29.905"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0">All</stat>
+<stat pass="1" fail="0">login_success_1</stat>
+<stat pass="4" fail="0">Register</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Register &amp; Login &amp; New Customer">Register &amp; Login &amp; New Customer</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Register">Register &amp; Login &amp; New Customer.Register</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Register Testcase">Register &amp; Login &amp; New Customer.Register.Register Testcase</stat>
+<stat pass="2" fail="0" id="s1-s1-s1-s1" name="TC1-Register">Register &amp; Login &amp; New Customer.Register.Register Testcase.TC1-Register</stat>
+<stat pass="1" fail="0" id="s1-s2" name="Login">Register &amp; Login &amp; New Customer.Login</stat>
+<stat pass="1" fail="0" id="s1-s2-s1" name="Login Testcase">Register &amp; Login &amp; New Customer.Login.Login Testcase</stat>
+<stat pass="1" fail="0" id="s1-s2-s1-s1" name="TC1-Valid login">Register &amp; Login &amp; New Customer.Login.Login Testcase.TC1-Valid login</stat>
+<stat pass="1" fail="0" id="s1-s3" name="New Customer">Register &amp; Login &amp; New Customer.New Customer</stat>
+<stat pass="1" fail="0" id="s1-s3-s1" name="NewCustomer Testcase">Register &amp; Login &amp; New Customer.New Customer.NewCustomer Testcase</stat>
+<stat pass="1" fail="0" id="s1-s3-s1-s1" name="AddNewCustomer">Register &amp; Login &amp; New Customer.New Customer.NewCustomer Testcase.AddNewCustomer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
 </robot>
